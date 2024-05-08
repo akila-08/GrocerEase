@@ -1,0 +1,297 @@
+* {
+	box-sizing: border-box;
+  }
+  body {
+	font-size: 14px;
+  }
+  .v43_2 {
+	width: 100%;
+	height: 1080px;
+	background: url("shoppingcart.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+  }
+  .v43_3 {
+	width: 100%;
+	height: 1080px;
+	background: rgba(245,245,245,1);
+	opacity: 1;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+  }
+  .v43_4 {
+	width: 100%;
+	height: 133px;
+	background: rgba(255,255,255,1);
+	opacity: 1;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+  }
+  .v43_6 {
+	width: 88px;
+	color: rgba(11,100,52,1);
+	position: absolute;
+	top: 35px;
+	left: 1150px;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 1;
+	text-align: left;
+  }
+  .v43_7 {
+	width: 89px;
+	color: rgba(0,0,0,1);
+	position: absolute;
+	top: 35px;
+	left: 1250px;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 1;
+	text-align: left;
+  }
+  .v43_11 {
+	width: 38px;
+	height: 38px;
+	background: url("shoppingcart.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	top: 25px;
+	right: 100px;
+  }
+
+  .custom-button {
+	width: 38px;
+	height: 38px;
+	background-image: url('shoppingcart.png'); /* Set the background image */
+	opacity:0.5;
+	background-size: cover; /* Make sure the image covers the button */
+	border: none; /* Remove default button border */
+	cursor: pointer; /* Change cursor to pointer on hover */
+	background-repeat: no-repeat;
+  }
+
+  .custom-button1 {
+	width: 42px;
+	height: 42px;
+	background-image: url('user.png'); /* Set the background image */
+	opacity:0.3;
+	background-size: cover; /* Make sure the image covers the button */
+	border: none; /* Remove default button border */
+	cursor: pointer; /* Change cursor to pointer on hover */
+  }
+
+  .v43_14 {
+	width: 56px;
+	height: 56px;
+	background: url("../images/v43_14.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	scale: 0.9;
+	top: 50px;
+	right: 0px;
+  }
+  .v208_58 {
+	width: 42px;
+	height: 42px;
+	background: url("user.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	top: -27px;
+	left: -25px;
+  }
+  .v208_56 {
+	width: 498px;
+	height: 100px;
+	background: url("logo_removebg_preview_1.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+    scale: 0.8;
+	top: -5px;
+	left: -50px;
+  }
+  .v43_17 {
+	width: 100%;
+	height: 408px;
+	background: rgba(11,100,52,1);
+	opacity: 1;
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	overflow: hidden;
+  }
+  .v43_18 {
+	width: 703px;
+	height: 336px;
+	background: url("vegetables_1.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	top: 70px;
+	left: 800px;
+	scale: 1.15;
+	overflow: hidden;
+  }
+  .v43_19 {
+	width: 432px;
+	color: rgba(255,255,255,1);
+	position: absolute;
+	top: 62px;
+	left: 40px;
+	font-family: Montserrat;
+	font-weight: Bold;
+	font-size: 40px;
+	opacity: 1;
+	text-align: left;
+  }
+  .v43_20 {
+	width: 451px;
+	color: rgba(245,245,245,1);
+	position: absolute;
+	top: 180px;
+	left: 40px;
+	font-family: Montserrat;
+	font-weight: Regular;
+	font-size: 25px;
+	opacity: 1;
+	text-align: left;
+  }
+  .v43_23 {
+	width: 274px;
+	color: rgba(0,0,0,1);
+	position: absolute;
+	top: 588px;
+	left: 0px;
+	font-family: Montserrat;
+	font-weight: SemiBold;
+	font-size: 48px;
+    scale: 0.65;
+	opacity: 1;
+	text-align: left;
+  }
+  .v208_59 {
+	width: 106px;
+	color: rgba(56,167,38,1);
+	position: absolute;
+	top: 932px;
+	left: 150px;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 1;
+	text-align: left;
+  }
+  .v208_60 {
+	width: 371px;
+	height: 246px;
+	background: url("veggies-removebg-preview.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	top: 674px;
+	left: 350px;
+	overflow: hidden;
+  }
+  .v208_61 {
+	width: 194px;
+	color: rgba(56,167,38,1);
+	position: absolute;
+	top: 936px;
+	left: 470px;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 1;
+	text-align: left;
+  }
+  .v208_62 {
+	width: 371px;
+	height: 246px;
+	scale: 0.7;
+	background: url("snackscat.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	top: 718px;
+	left: 1150px;
+  }
+  .v208_63 {
+	width: 122px;
+	color: rgba(56,167,38,1);
+	position: absolute;
+	top: 936px;
+	left: 1290px;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 1;
+	text-align: left;
+  }
+  .v208_64 {
+	width: 357px;
+	height: 179px;
+	background: url("essential.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	top: 741px;
+	left: 785px;
+	overflow: hidden;
+  }
+  .v208_65 {
+	width: 179px;
+	color: rgba(56,167,38,1);
+	position: absolute;
+	top: 936px;
+	left: 900px;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 1;
+	text-align: left;
+  }
+  .v208_66 {
+	width: 193px;
+	height: 170px;
+	background: url("fruits-png-image-fruits-png-image-download-39.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	top: 741px;
+	left: 95px;
+	overflow: hidden;
+  }

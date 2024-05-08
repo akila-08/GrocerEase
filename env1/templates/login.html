@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Grocery Login</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='loginstyles.css') }}">
+</head>
+<body>
+  <div class="login-box" id="login-box">
+    <h2>Login</h2>
+    <form id="login-form" action="/login" method="POST">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br>
+      <input type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="/signup" id="signup-link">Sign up</a></p>
+  </div>
+
+  <div id="redirecting" style="display:none;">
+    <img src="{{ url_for('static', filename='shoppingcart.gif') }} " alt="Redirecting..." width="150" height="150">
+    <p>GETTING YOUR CART READY...</p>
+  </div>
+
+  <!--<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('login-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent form submission
+        document.getElementById('login-box').style.display = 'none'; // Hide login box
+        document.body.style.backgroundImage = 'none'; // Hide background image
+        document.getElementById('redirecting').style.display = 'block'; // Show redirecting GIF
+        setTimeout(function() {
+          window.location.href = '/shopping'; // Redirect to shopping page
+        }, 2000); // Adjust delay as needed
+      });
+    });
+  </script>-->
+</body>
+</html>

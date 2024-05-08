@@ -1,0 +1,30 @@
+/* payment-success.css */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Adjust max-width as needed */
+    margin: 100px auto; /* Center the container vertically and horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 35px;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}

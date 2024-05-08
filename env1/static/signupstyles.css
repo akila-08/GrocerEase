@@ -1,0 +1,80 @@
+
+
+  body {
+    font-family: Arial, sans-serif;
+    background: url("Addcustomer.jpg");
+    background-size: 1540px 1000px;
+    padding: 100px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff50;
+    padding: 20px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    right:90px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #f3e7e7d9;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type="password"]
+{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #f3e7e7d9;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+    background-color: #f6a72a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #b32d00;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        padding: 8px 16px;
+    }
+}
+
+
+  

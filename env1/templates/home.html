@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Grocery Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='homestyles.css') }}">
+</head>
+<body>
+    <div class="background">
+        <!-- Top Image -->
+        <img src="{{ url_for('static', filename='logonew.png') }}" class="top-image">
+        <!-- Container -->
+        <div class="container">
+            <button class="button-start" role="button" onclick="userLogin()">GET STARTED</button>
+        </div>
+    </div>
+
+    <script>
+        function userLogin() {
+            window.location.href = '/login';
+        }
+    </script>
+</body>
+</html>

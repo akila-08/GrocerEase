@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='sign_success.css') }}">
+    <title>Signup Success</title>
+</head>
+<body>
+    <div class="success-message">
+        <h1>Signup Successful!</h1>
+        <p>Your account has been created successfully.</p>
+        <div class="container">
+            <button class="shop" role="button" onclick="startshopping()">Let's shop</button>
+        </div>
+    </div>
+    <script>
+        function startshopping() {
+            window.location.href = '/shopping';
+        }
+    </script>
+</body>
+</html>

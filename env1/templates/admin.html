@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../static/adminstyles.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        
+        <!-- Buttons for Add, Delete, and Update -->
+        <div class="buttons">
+            <button onclick="redirectTo('addProductForm')">Add Product</button>
+            <button onclick="redirectTo('deleteProductForm')">Delete Product</button>
+            <button onclick="redirectTo('updateProductForm')">Update Product</button>
+        </div>
+
+        <!-- Form to Add a Product -->
+        <form id="addProductForm" action="/addProduct" method="POST" enctype="multipart/form-data" style="display: none;">
+            <h2>Add Product</h2>
+            <label for="itemname">Product Name:</label>
+            <input type="text" id="itemname" name="itemname" required><br>
+            
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required><br>
+            
+            <label for="qty">Quantity:</label>
+            <input type="number" id="qty" name="qty" step="1" required><br>
+            
+            <label for="Price">Price:</label>
+            <input type="number" id="price" name="price" required><br>
+            
+            <label for="stock">Stock:</label>
+            <input type="text" id="stock" name="stock" required><br>
+            
+            <label for="image">Image:</label>
+            <input type="file" id="image_path" name="image_path" accept="image/*" required><br>
+            
+            <input type="submit" value="Add Product" />
+        </form>
+
+        <!-- Form to Delete a Product -->
+        <form id="deleteProductForm" action="/deleteProduct" method="POST" style="display: none;">
+            <h2>Delete Product</h2>
+            <label for="itemid">Product ID to Delete:</label>
+            <input type="text" id="itemid" name="itemid" required><br>
+            <button type="submit">Delete Product</button>
+        </form>
+
+        <!-- Form to Update a Product -->
+        <form id="updateProductForm" style="display: none;">
+            <h2>Update Product</h2>
+            <label for="productIdToUpdate">Product ID to Update:</label>
+            <input type="number" id="productIdToUpdate" name="productIdToUpdate" required><br>
+            <label for="updatedProductName">Updated Product Name:</label>
+            <input type="text" id="updatedProductName" name="updatedProductName"><br>
+            <label for="updatedProductPrice">Updated Price:</label>
+            <input type="number" id="updatedProductPrice" name="updatedProductPrice" step="0.01"><br>
+            <label for="updatedProductQuantity">Updated Quantity:</label>
+            <input type="number" id="updatedProductQuantity" name="updatedProductQuantity"><br>
+            <button type="submit">Update Product</button>
+        </form>
+    </div>
+
+    <script>
+        function redirectTo(formId) {
+            // Hide all forms first
+            document.querySelectorAll('form').forEach(form => {
+                form.style.display = 'none';
+            });
+            // Display the selected form
+            document.getElementById(formId).style.display = 'block';
+            
+        }
+        
+    </script>
+</body>
+</html>

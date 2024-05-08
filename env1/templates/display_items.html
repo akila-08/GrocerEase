@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='display.css') }}" >
+    <title>E-Grocery Shop</title>
+  </head>
+  <body>
+    <div class="v43_2">
+        <div class="v43_3">
+          <div class="v43_4">
+            <a href='/shopping' class="button"><span class="v43_6">Home</span></a>
+            <a href='/about' class="button"><span class="v43_7">About</span></a>
+            <div class="v43_11"><div class="custom-button" onclick="window.location.href='/cart';"></div>
+                <div class="v208_57"></div>
+            </div>
+            <div class="v43_14">
+                <div class="v208_58">
+                    <button class="custom-button1" onclick="window.location.href='/user_profile';"></button>
+                </div>
+            </div>
+        </div><div class="v208_56"></div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="item-container">
+        <!-- Loop through your items and display them dynamically -->
+        {% for item in items %}
+        <div class="item-card">
+          <img
+            src="{{ url_for('static', filename=item.image) }}"
+            alt="{{ item.itemname }}"
+            class="item-image"
+          />
+          <div class="item-details">
+            <h3 class="item-name">{{ item.itemname }}</h3>
+            <p class="item-quantity">Quantity: {{ item.qty }}</p>
+            <p class="item-price">Price: &#8377;{{ item.price }}</p>
+            <!-- Add to Cart button -->
+            <form action="/add_to_cart" method="POST">
+              <input type="hidden" name="itemid" value="{{ item.itemid }}" />
+              <button class="add-to-cart-btn" data-item-id="{{ item.itemid }}">
+                Add to Cart
+              </button>
+            </form>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+body {
+    background:url("banner-image-1.jpg");
+    background-size: 1550px 1000px;
+    margin: 0;
+    padding: 0;
+}s
+
+.success-message {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #dff0d8; /* Green background for success */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for card effect */
+}
+
+.success-message h1 {
+    color: #3c763d; /* Dark green text color */
+}
+
+.success-message p {
+    color: #3c763d; /* Dark green text color */
+}
+
+.container {
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .shop {
+    background-image: linear-gradient(144deg,#19880a, #05a33c 50%,#11e755);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }

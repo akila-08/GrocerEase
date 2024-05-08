@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='checkout.css') }}">
+</head>
+<body>
+    <div class="content-box">
+        <h1>Checkout</h1>
+        <p>Your order has been successfully placed.</p>
+        <p>Total Amount:  &#8377;{{ total_amount }}</p>
+        
+        <!-- Form for selecting mode of payment -->
+        <form action="{{ url_for('process_payment') }}" method="POST">
+            <input type="hidden" name="total_amount" value="{{ total_amount }}">
+            <label for="payment_method">Select Mode of Payment:</label>
+            <select name="payment_method" id="payment_method">
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="net_banking">Net Banking</option>
+                <option value="cash_on_delivery">Cash on Delivery</option>
+            </select>
+            <br>
+            <button type="submit">Proceed to Payment</button>
+        </form>
+        
+        <!-- Optionally, you can provide a link to continue shopping or any other action -->
+        <a href="{{ url_for('getshopping') }}">Continue Shopping</a>
+    </div>
+</body>
+</html>

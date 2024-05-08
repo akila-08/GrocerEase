@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+.background {
+  position: relative;
+  height: 100vh;
+  background-image: url('homepage_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.top-image {
+  position: absolute;
+  top: 40%;
+  left: -3%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.container {
+  position: absolute;
+  top: 55%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.button-start {
+  background-image: linear-gradient(144deg,#19880a, #05a33c 50%,#11e755);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-start:active,
+.button-start :hover{
+  background-color: #08541e;
+}
