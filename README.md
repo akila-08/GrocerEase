@@ -1,0 +1,1 @@
+This project is a comprehensive online grocery shopping web application developed using Python web framework Flask for backend development, PostgreSQL for database management and HTML/CSS for frontend design.
